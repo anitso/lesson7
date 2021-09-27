@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+.container {
+	width: 150px;
+}
+
+.box-image{
+	width: 100%;
+}
+.box {
+	position: relative;
+}
+.background{
+	position: relative;
+	background-image: url('../images/tesla.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 70vh;
+	width: 100%;
+	transition: background-image 0.5s linear 3s;
+}
+.backgrond:hover{
+	background-image: url('../images/tesla.jpeg');
+	background-position: top left;
+}
+
+
+.animation {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	image: url('../images/tesla.jpg') ;
+	background-position: center;
+	background-size: cover;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	animation-name: car;
+	animation-duration: 5s;
+	animation-delay: 0.3s;
+	animation-timing-function: linear;
+	animation-direction:alternate ;
+	animation-fill-mode:backwards ;
+	animation-iteration-count: infinite ;
+}
+
+
+@keyframes car {
+	from {
+        left: 0;
+	}
+	to{
+       left: 1300px;
+	}
+}
